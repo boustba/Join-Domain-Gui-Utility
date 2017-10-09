@@ -10,30 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Join_Domain_Gui_Utility
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ClickedNo.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ClickedNo : Window
     {
-        public MainWindow()
+        public ClickedNo()
         {
             InitializeComponent();
-            lbl_ComputerName.Content = Environment.MachineName;
-        }
-
-        private void Yes_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void No_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

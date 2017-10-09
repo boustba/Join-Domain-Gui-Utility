@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Button Name="Yes" Content="YES" HorizontalAlignment="Left" Height="38" Margin="282,271,0,0" VerticalAlignment="Top" Width="110" IsDefault="True" FontSize="20" Click="Yes_Click"/>
+        <Button Name="No" Content="NO" HorizontalAlignment="Left" Height="38" Margin="397,271,0,0" VerticalAlignment="Top" Width="110" FontSize="20" Click="No_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="54" Margin="10,10,0,0" TextWrapping="Wrap" Text="Please verify that the computer name is correct." VerticalAlignment="Top" Width="497" FontSize="22"/>
+        <Label Name="lbl_ComputerName" Content="" HorizontalAlignment="Left" Height="69" Margin="15,86,0,0" VerticalAlignment="Top" Width="377" FontSize="36"/>
+
     </Grid>
 </Window>
