@@ -5,12 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Join_Domain_Gui_Utility"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="389.89" Width="624.081">
     <Grid>
-        <Button Name="Yes" Content="YES" HorizontalAlignment="Left" Height="38" Margin="282,271,0,0" VerticalAlignment="Top" Width="110" IsDefault="True" FontSize="20" Click="Yes_Click"/>
-        <Button Name="No" Content="NO" HorizontalAlignment="Left" Height="38" Margin="397,271,0,0" VerticalAlignment="Top" Width="110" FontSize="20" Click="No_Click"/>
-        <TextBlock HorizontalAlignment="Left" Height="54" Margin="10,10,0,0" TextWrapping="Wrap" Text="Please verify that the computer name is correct." VerticalAlignment="Top" Width="497" FontSize="22"/>
-        <Label Name="lbl_ComputerName" Content="" HorizontalAlignment="Left" Height="69" Margin="15,86,0,0" VerticalAlignment="Top" Width="377" FontSize="36"/>
+
+        <Button x:Name="btn_Yes" Content="YES" HorizontalAlignment="Left" Height="45" Margin="353,300,0,0" VerticalAlignment="Top" Width="100" FontSize="20" IsDefault="True" Click="btn_Yes_Click"/>
+        <Button x:Name="btn_No" Content="NO" HorizontalAlignment="Left" Height="45" Margin="480,300,0,0" VerticalAlignment="Top" Width="100" FontSize="20" Click="btn_No_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="62" Margin="22,10,0,0" TextWrapping="Wrap" Text="This utility will join this computer to the JMUAD domain. Please follow all prompts and be sure to enter accurate information." VerticalAlignment="Top" Width="558" FontSize="20"/>
+        <Label x:Name="lbl_ComputerName" Content="" HorizontalAlignment="Left" Height="80" Margin="22,121,0,0" VerticalAlignment="Top" Width="442" FontSize="48"/>
+        <TextBlock HorizontalAlignment="Left" Height="50" Margin="22,206,0,0" TextWrapping="Wrap" Text="Is the computer name above correct? Yes/No" VerticalAlignment="Top" Width="431" FontSize="20"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="273" Margin="10,10,0,0" VerticalAlignment="Top" Width="596"/>
 
     </Grid>
 </Window>

@@ -23,5 +23,10 @@ namespace Join_Domain_Gui_Utility
         {
             InitializeComponent();
         }
+
+        private void btn_Close_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

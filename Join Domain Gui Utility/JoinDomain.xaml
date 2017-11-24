@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Join_Domain_Gui_Utility"
         mc:Ignorable="d"
-        Title="JoinDomain" Height="300" Width="300">
+        Title="JoinDomainWindow" Height="690" Width="739.147">
     <Grid>
-        
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="487" Margin="10,10,0,0" VerticalAlignment="Top" Width="702"></Border>
+        <Label x:Name="lbl_PrimaryOperator" Content="Primary Operator:" HorizontalAlignment="Left" Margin="10,552,0,0" VerticalAlignment="Top" Height="35" Width="170" FontSize="20"/>
+        <Label x:Name="lbl_Description" Content="Computer Description:" HorizontalAlignment="Left" Margin="10,512,0,0" VerticalAlignment="Top" Height="35" Width="212" FontSize="20"/>
+        <Label x:Name="lbl_Password" Content="Password:" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Height="35" Width="106" FontSize="20"/>
+        <Label x:Name="lbl_UserName" Content="Username:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="106" FontSize="20"/>
+        <Label Content="Search OU:" HorizontalAlignment="Left" Height="35" Margin="333,10,0,0" VerticalAlignment="Top" Width="124" FontSize="22"/>
+        <TextBox x:Name="tb_UserName" HorizontalAlignment="Left" Height="35" Margin="121,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" FontSize="20"/>
+        <PasswordBox x:Name="tb_PasswordBox" HorizontalAlignment="Left" Margin="121,49,0,0" VerticalAlignment="Top" Width="212" Height="35" FontSize="20"/>
+        <Button x:Name="btn_Login" Content="Login" HorizontalAlignment="Left" Height="33" Margin="121,89,0,0" VerticalAlignment="Top" Width="150" FontSize="20" Click="btn_Login_Click" IsDefault="True"/>
+        <TextBox x:Name="tb_Description" HorizontalAlignment="Left" Height="35" Margin="227,512,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="485" FontSize="20"/>
+        <TextBox x:Name="tb_PrimaryOperator" HorizontalAlignment="Left" Height="35" Margin="227,552,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="485" FontSize="20"/>
+        <Label Content="Selected OU:" HorizontalAlignment="Left" Height="25" Margin="10,472,0,0" VerticalAlignment="Top" Width="80"/>
+        <ProgressBar HorizontalAlignment="Left" Height="12" Margin="10,502,0,0" VerticalAlignment="Top" Width="355" Visibility="Hidden"/>
+        <Button x:Name="btn_JoinOrUnjoin" Content="Join Domain" HorizontalAlignment="Left" Height="41" Margin="370,600,0,0" VerticalAlignment="Top" Width="190" Click="btn_JoinOrUnjoin_Click" FontSize="20" IsEnabled="False"/>
+        <Button x:Name="btn_Cancel" Content="Cancel" HorizontalAlignment="Left" Height="41" Margin="565,600,0,0" VerticalAlignment="Top" Width="147" FontSize="22" Click="btn_Cancel_Click" IsCancel="True"/>
+        <Label x:Name="lbl_ProgressBarText" Content="Join Domain Progress" HorizontalAlignment="Left" Height="29" Margin="10,611,0,0" VerticalAlignment="Top" Width="355"/>
+        <TreeView x:Name="tv_OUTree" TreeViewItem.Expanded="TreeViewItem_Expanded" TreeViewItem.Selected="TreeViewItem_Selected" HorizontalAlignment="Left" Height="345" Margin="10,127,0,0" VerticalAlignment="Top" Width="702"/>
+        <Label x:Name="lbl_SelectedOU" Content="" HorizontalAlignment="Left" Height="25" Margin="90,472,0,0" VerticalAlignment="Top" Width="622"/>
+        <Button x:Name="btn_SearchOU" Content="Search" HorizontalAlignment="Left" Height="32" Margin="589,52,0,0" VerticalAlignment="Top" Width="114" Click="btn_SearchOU_Click" FontSize="22"/>
+        <TextBox x:Name="tb_SearchOU" HorizontalAlignment="Left" Height="35" Margin="457,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" FontSize="22"/>
+
     </Grid>
 </Window>

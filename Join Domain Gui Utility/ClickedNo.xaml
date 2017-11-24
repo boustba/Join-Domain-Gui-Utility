@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Join_Domain_Gui_Utility"
         mc:Ignorable="d"
-        Title="ClickedNo" Height="300" Width="300">
+        Title="ClickedNoWindow" Height="285.662" Width="405.882">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left" Height="181" Margin="22,20,0,0" TextWrapping="Wrap" Text="By clicking &quot;NO&quot; you indicated that the computer is named incorrectly. Please rename the computer, reboot, and then run this utility again." VerticalAlignment="Top" Width="350" FontSize="24"/>
+        <Button x:Name="btn_Close" Content="Close" HorizontalAlignment="Left" Height="44" Margin="228,201,0,0" VerticalAlignment="Top" Width="144" FontSize="22" Click="btn_Close_Click"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="186" Margin="10,10,0,0" VerticalAlignment="Top" Width="378"/>
+
     </Grid>
 </Window>
